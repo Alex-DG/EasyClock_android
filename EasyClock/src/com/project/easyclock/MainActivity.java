@@ -64,7 +64,8 @@ public class MainActivity extends ActionBarActivity {
                 if (mClock != null) {
                     mClock.setText(getTime());
                 }
-                mHandler.postDelayed(mRunnable, 1000);
+                //set time after the specified amount of time elapses
+                mHandler.postDelayed(mRunnable, 1000); 
             }
         }
     };
